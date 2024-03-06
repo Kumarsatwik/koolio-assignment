@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="floors">
+        <div id="elevator"></div>
+        <div class="floor">
+          <div class="level">Level 2</div>
+        </div>
+
+        <div class="floor">
+          <div class="level">Level 1</div>
+        </div>
+
+        <div class="floor">
+          <div class="level">Level 0</div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div>
+          <button id="downButton2" onclick="moveElevator(2)">Down</button>
+        </div>
+
+        <div>
+          <button id="upButton1" onclick="moveElevator(1)">Up</button>
+          <button id="downButton1" onclick="moveElevator(0)">Down</button>
+        </div>
+
+        <div>
+          <button id="upButton0" onclick="moveElevator(0)">Up</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
