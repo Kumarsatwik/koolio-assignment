@@ -1,47 +1,40 @@
-body {
-  margin: 20px;
+.container {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.floors {
+  position: relative;
+  height: 600px;
+  width: 250px;
+  border: 1px solid red;
+}
+.floor {
+  height: 200px;
+  width: 100%;
+  border-top: 1px solid black;
+}
+.level {
+  text-align: center;
+  width: 100px;
+  height: 20px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.buttons {
+  height: 600px;
+  width: 250px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 120px;
+  padding: 10px;
 }
-
-svg {
-  background-color: rgb(195, 225, 244);
-  border: 1.8px solid black;
-  width: 200px;
-}
-
-#q1 {
-  height: 450px;
-}
-
-#line {
-  stroke: rgb(255, 0, 0);
-  stroke-width: 0.3;
-}
-
-#moveDownBtn {
-  height: 100px;
-  width: 55px;
-  cursor: pointer;
-}
-
-#moveUpBtn {
-  height: 100px;
-  width: 55px;
-  cursor: pointer;
-}
-
-#moveUpBtn_1 {
-  height: 100px;
-  width: 55px;
-  cursor: pointer;
-}
-
-#moveDownBtn_1 {
-  height: 100px;
-  width: 55px;
-  cursor: pointer;
+#elevator {
+  width: 220px;
+  height: 150px;
+  background-color: red;
+  position: fixed;
+  top: 445px;
+  margin-left: 20px;
 }
