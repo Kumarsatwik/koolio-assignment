@@ -2,43 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
     <div class="container">
-      <div class="floors">
+      <div id="building">
+        <div class="floor" id="floor_two">
+          <p>Level 2</p>
+        </div>
+        <div class="floor" id="floor_one">
+          <p>Level 1</p>
+        </div>
+        <div class="floor" id="floor_zero">
+          <p>Level 0</p>
+        </div>
         <div id="elevator"></div>
-        <div class="floor">
-          <div class="level">Level 2</div>
-        </div>
-
-        <div class="floor">
-          <div class="level">Level 1</div>
-        </div>
-
-        <div class="floor">
-          <div class="level">Level 0</div>
-        </div>
       </div>
 
-      <div class="buttons">
-        <div>
-          <button id="downButton2">Down</button>
-        </div>
+      <audio id="sound">
+        <source src="assets/audios/elevator.mp3" type="audio/mpeg" />
+      </audio>
 
-        <div>
-          <button id="upButton1">Up</button>
-          <button id="downButton1">Down</button>
+      <div class="control">
+        <div class="floor_control">
+          <img src="./assets/images/arrow.svg" class="down" id="two_down" />
         </div>
-
-        <div>
-          <button id="upButton0">Up</button>
+        <div class="floor_control">
+          <img src="./assets/images/arrow.svg" class="up" id="one_up" />
+          <img src="./assets/images/arrow.svg" class="down" id="one_down" />
+        </div>
+        <div class="floor_control">
+          <img src="./assets/images/arrow.svg" class="up" id="zero_up" />
         </div>
       </div>
     </div>
-
-    <script src="./script.js"></script>
   </body>
+
+  <script src="./script.js"></script>
 </html>
