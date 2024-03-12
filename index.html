@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
 
   <body>
@@ -20,23 +20,25 @@
         <div class="floor" id="floor_zero">
           <p>Level 0</p>
         </div>
-        <div id="elevator"></div>
+        <div id="elevator">
+          <p class="elevator_text">Elevator</p>
+        </div>
       </div>
 
       <audio id="sound">
-        <source src="assets/audios/elevator.mp3" type="audio/mpeg" />
+        <source src="sound.mp3" type="audio/mpeg" />
       </audio>
 
       <div class="control">
         <div class="floor_control">
-          <img src="./assets/images/arrow.svg" class="down" id="two_down" />
+          <button class="down" id="two_down">Down</button>
         </div>
         <div class="floor_control">
-          <img src="./assets/images/arrow.svg" class="up" id="one_up" />
-          <img src="./assets/images/arrow.svg" class="down" id="one_down" />
+          <button class="up" id="one_up">Up</button>
+          <button class="down" id="one_down">Down</button>
         </div>
         <div class="floor_control">
-          <img src="./assets/images/arrow.svg" class="up" id="zero_up" />
+          <button class="up" id="zero_up">Up</button>
         </div>
       </div>
     </div>
